@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Server Rules</title>
+
+<link
+rel="icon"
+type="image/png"
+href="https://cdn.discordapp.com/attachments/1497382136259285203/1508839960013176932/file_00000000bf7c71fa90844652c93c2ae2.png?ex=6a170037&is=6a15aeb7&hm=2ee1a9733d822f11bcd8201ff2d3d287f48fa94fac22041380824fc4d0cba6d0&"
+>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#0b0b0b;
+    color:white;
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:
+    radial-gradient(circle at top left,#ffffff08,transparent 30%),
+    radial-gradient(circle at bottom right,#66666610,transparent 35%),
+    linear-gradient(130deg,#050505,#111111,#1a1a1a);
+
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+
+    background-size:40px 40px;
+
+    z-index:-1;
+}
+
+.navbar{
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+
+    padding:20px 70px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(15,15,15,0.55);
+
+    border-bottom:1px solid rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(16px);
+
+    z-index:999;
+}
+
+.logo{
+    font-family:'Orbitron',sans-serif;
+    font-size:26px;
+    color:white;
+}
+
+.cyber-btn{
+    padding:12px 24px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+    color:white;
+
+    font-family:'Orbitron',sans-serif;
+
+    background:
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,0.12),
+        rgba(90,90,90,0.18)
+    );
+
+    border:1px solid rgba(255,255,255,0.12);
+
+    transition:0.35s;
+}
+
+.cyber-btn:hover{
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 0 20px rgba(255,255,255,0.08);
+}
+
+.container{
+    max-width:1000px;
+
+    margin:auto;
+
+    padding:
+    150px
+    30px
+    100px;
+}
+
+.title{
+    text-align:center;
+
+    font-size:60px;
+
+    margin-bottom:25px;
+
+    font-family:'Orbitron',sans-serif;
+
+    background:
+    linear-gradient(to right,#ffffff,#888888);
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.subtitle{
+    text-align:center;
+
+    color:#bdbdbd;
+
+    margin-bottom:60px;
+
+    line-height:1.8;
+}
+
+.rules-grid{
+    display:grid;
+    gap:25px;
+}
+
+.rule-card{
+    background:
+    rgba(255,255,255,0.03);
+
+    border:
+    1px solid rgba(255,255,255,0.08);
+
+    border-radius:26px;
+
+    padding:35px;
+
+    transition:0.4s;
+}
+
+.rule-card:hover{
+    transform:translateY(-5px);
+
+    border-color:
+    rgba(255,255,255,0.16);
+
+    box-shadow:
+    0 0 25px rgba(255,255,255,0.08);
+}
+
+.rule-card h2{
+    font-family:'Orbitron',sans-serif;
+
+    margin-bottom:15px;
+}
+
+.rule-card p{
+    color:#d4d4d4;
+
+    line-height:1.9;
+}
+
+footer{
+    margin-top:50px;
+
+    padding:40px;
+
+    text-align:center;
+
+    color:#8c8c8c;
+
+    border-top:
+    1px solid rgba(255,255,255,0.08);
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        True Catlol Headquarters
+    </div>
+
+    <button class="cyber-btn" onclick="window.location.href='Home.html'">
+        Back Home
+    </button>
+
+</nav>
+
+<div class="container">
+
+    <h1 class="title">
+        Server Rules
+    </h1>
+
+    <p class="subtitle">
+        All members inside headquarters must follow every rules
+        and keep all privacy safe.
+    </p>
+
+    <div class="rules-grid">
+
+        <div class="rule-card">
+            <h2>Follow Discord ToS</h2>
+
+            <p>
+                Every member must follow discord tos 
+                failure to comply may result in moderation action.
+            </p>
+        </div>
+
+        <div class="rule-card">
+            <h2>Keep Privacy</h2>
+
+            <p>
+                Keep all headquarter chat and file safe
+                do not share to non headquarters
+            </p>
+        </div>
+
+        <div class="rule-card">
+            <h2>Respect Members</h2>
+
+            <p>
+                Every member must respect each other and avoid toxic behavior
+                inside server environment.
+            </p>
+        </div>
+
+        <div class="rule-card">
+            <h2>No Unauthorized Share</h2>
+
+            <p>
+                Sharing Website link without permission
+                will result permanent ban with no chance.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 True Catlol Headquarters — Internal Rules
+</footer>
+
+</body>
+</html>
